@@ -39,3 +39,40 @@ By adopting Continuous Integration, development teams can achieve several benefi
 - Agile Development: CI aligns well with Agile development principles, facilitating continuous improvement and iterative development.
 
 Continuous Integration lays the foundation for other practices such as Continuous Delivery and Continuous Deployment, which extend the automation and collaboration further down the software delivery pipeline. These practices collectively contribute to a more efficient and resilient software development process, enabling organizations to deliver value to their users quickly and consistently.
+
+# What is continious delivery/deployment? (CD)
+
+Continuous Deployment (CD) and Continuous Delivery (CD) are related software development practices that extend the principles of Continuous Integration (CI) to automate the process of deploying software to production environments. While they share some similarities, there are distinct differences between the two:
+
+1. **Continuous Delivery (CD):**
+Continuous Delivery is a software development approach in which code changes are automatically prepared and made ready for deployment to production at any time. The key characteristic of CD is that all code changes are consistently delivered to a staging environment where they undergo further automated testing and validation.
+
+In a Continuous Delivery workflow:
+- Code changes that pass the automated tests in the CI environment are considered "release candidates."
+- These release candidates are automatically deployed to a staging environment, which closely resembles the production environment.
+- In the staging environment, the software undergoes additional testing, including user acceptance testing (UAT) and performance testing.
+- If the software passes all tests and receives approval in the staging environment, it is considered ready for production deployment.
+
+The CD process ensures that the software is always in a deployable state, but the final decision to deploy to the production environment is typically made manually by the development or operations team. This manual intervention provides an additional layer of safety, allowing teams to address any last-minute concerns before releasing the software to end-users.
+
+Continuous Delivery benefits include:
+- Consistent and reliable releases: Every release candidate undergoes the same rigorous testing and validation, leading to more reliable software releases.
+- Reduced time to market: CD shortens the time between writing code and delivering it to users, enabling faster release cycles.
+- Improved collaboration and feedback: Frequent releases and automated testing promote a collaborative culture and quick feedback loops.
+
+2. **Continuous Deployment (CD):**
+Continuous Deployment takes the automation one step further by automatically deploying the code changes to the production environment once they pass all necessary tests in the staging environment. Unlike Continuous Delivery, there is no manual intervention in the deployment process. Once a code change is deemed ready for production in the staging environment, it is automatically pushed to the live environment.
+
+In a Continuous Deployment workflow:
+- Code changes that pass the automated tests in the CI environment are automatically deployed to the staging environment.
+- The software undergoes additional testing in the staging environment to ensure its readiness for production.
+- Once the software successfully passes all tests in the staging environment, it is automatically deployed to the production environment without human intervention.
+
+Continuous Deployment benefits include:
+- Faster time to market: Continuous Deployment automates the process of deploying code changes to production, reducing the time it takes to release new features and updates to end-users.
+- Lower risk of human errors: By removing manual intervention in the deployment process, the risk of human errors is minimized.
+- Improved feedback loops: With every code change automatically deployed to production, developers receive immediate feedback on the impact of their changes.
+
+It's important to note that both Continuous Delivery and Continuous Deployment require a high degree of automation, robust testing practices, and a strong focus on monitoring and feedback mechanisms to ensure the stability and reliability of the software delivery process.
+
+Both CD and CD practices align well with Agile development methodologies, enabling teams to deliver value to users quickly, iterate on software improvements rapidly, and respond to changing requirements efficiently. However, organizations should carefully consider their specific requirements, risk tolerance, and customer expectations when deciding whether to implement Continuous Delivery or Continuous Deployment.
